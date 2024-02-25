@@ -7,9 +7,15 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
+<<<<<<< HEAD
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
+=======
+  --hue-color: 30;
+  --first-color: hsl(var(--hue-color), 93%, 57%);
+  --second-color: hsl(203, 5%, 24%);
+>>>>>>> 8a53f3ede4cb2e7b580e1e90ae15fa2a33371350
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -250,6 +256,7 @@ img {
   border-radius: 0.5rem;
 }
 
+<<<<<<< HEAD
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
@@ -305,14 +312,20 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+=======
+>>>>>>> 8a53f3ede4cb2e7b580e1e90ae15fa2a33371350
 
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
 }
 .work__img {
+<<<<<<< HEAD
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
+=======
+  box-shadow:none;
+>>>>>>> 8a53f3ede4cb2e7b580e1e90ae15fa2a33371350
   overflow: hidden;
 }
 .work__img img {
@@ -483,4 +496,8 @@ img {
   .home__img {
     width: 450px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8a53f3ede4cb2e7b580e1e90ae15fa2a33371350
