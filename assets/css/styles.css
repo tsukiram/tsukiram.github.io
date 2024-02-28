@@ -103,7 +103,9 @@ img {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
-
+.l-main{
+  margin-top: 50px;
+}
 .l-header {
   width: 100%;
   position: fixed;
@@ -178,47 +180,7 @@ img {
   right: 0;
 }
 
-/*===== HOME =====*/
-.home {
-  position: relative;
-  row-gap: 5rem;
-  padding: 4rem 0 5rem;
-}
-.home__data {
-  align-self: center;
-}
-.home__title {
-  font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
-}
-.home__title-color {
-  color: var(--first-color);
-}
-.home__social {
-  display: flex;
-  flex-direction: column;
-}
-.home__social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
-}
-.home__social-icon:hover {
-  color: var(--first-color);
-}
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 260px;
-}
-.home__blob {
-  fill: var(--first-color);
-}
-.home__blob-img {
-  width: 360px;
-}
+
 
 /*BUTTONS*/
 .button {
@@ -251,7 +213,64 @@ img {
 }
 
 
+
+
+
+
+/* ===== ngl =====*/
+
+.ngl img {
+  width: 400px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto;
+  margin: 0 ; /* Jarak antara kedua gambar */
+}
+
+.ngl_button img {
+  transition: 1s;
+  width: 160px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+}
+.ngl_button img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 1024px) {
+  .ngl {
+    display: flex;
+    justify-content: flex-start; /* Mengatur konten ke kiri */
+    align-items: center;
+    margin-left: 34%; /* Menggeser gambar ke kiri */
+    align-items: center;
+  }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .ngl {
+      display: flex;
+      justify-content: flex-start; /* Mengatur konten ke kiri */
+      align-items: center;
+      margin-left: 30%; /* Menggeser gambar ke kiri */
+      align-items: center;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .ngl {
+      display: flex;
+      justify-content: flex-start; /* Mengatur konten ke kiri */
+      align-items: center;
+      margin-left: 27%; /* Menggeser gambar ke kiri */
+      align-items: center;
+    }
+  
+  }
+
+
+
+
+
+
 /* ===== WORK =====*/
+
 .work__container {
   row-gap: 2rem;
 }
@@ -265,6 +284,58 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+
+.centered-image {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.blog__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-align: center; /* Tambahkan properti ini */
+  color: var(--second-color);
+}
+
+.blog__date {
+  font-size: 14px;
+  text-align: center; /* Tambahkan properti ini */
+  color: var(--second-color);
+}
+
+.judul_tulisan{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--second-color);
+}
+@media only screen and (min-width: 1024px) {
+.content {
+  padding-left: 20%; 
+  padding-right: 20%;
+  text-align:justify;
+
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    padding-left: 10%; 
+    padding-right: 10%;
+    text-align:justify;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .content {
+    padding-left: 5%; 
+    padding-right: 5%;
+    text-align:justify ;
+
+  }
+
+}
+
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -428,3 +499,4 @@ img {
     width: 450px;
   }
 }
+
