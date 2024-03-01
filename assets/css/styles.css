@@ -8,7 +8,7 @@
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 30;
-  --first-color: hsl(var(--hue-color), 93%, 57%);
+  --first-color: hsl(203, 5%, 24%);
   --second-color: hsl(203, 5%, 24%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
@@ -213,9 +213,7 @@ img {
 }
 
 
-
-
-
+#parent_ngl {position : relative}
 
 /* ===== ngl =====*/
 
@@ -227,47 +225,78 @@ img {
 
 .ngl_button img {
   transition: 1s;
-  width: 160px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  height: auto;
+  margin: 0 ; /* Jarak antara kedua gambar */
+  width: 170px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+  position: absolute;
+  top: 120px ;
 }
 .ngl_button img:hover {
   transform: scale(1.1);
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (min-width: 1024px) {
-  .ngl {
+  .ngl_button {
     display: flex;
     justify-content: flex-start; /* Mengatur konten ke kiri */
     align-items: center;
     margin-left: 34%; /* Menggeser gambar ke kiri */
-    align-items: center;
   }
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .ngl {
+    .ngl_button {
       display: flex;
       justify-content: flex-start; /* Mengatur konten ke kiri */
       align-items: center;
-      margin-left: 30%; /* Menggeser gambar ke kiri */
-      align-items: center;
+      margin-left: 26%; /* Menggeser gambar ke kiri */
     }
   }
   
   @media only screen and (max-width: 767px) {
-    .ngl {
+    .ngl_button {
       display: flex;
       justify-content: flex-start; /* Mengatur konten ke kiri */
       align-items: center;
-      margin-left: 27%; /* Menggeser gambar ke kiri */
-      align-items: center;
+      margin-left: 17%; /* Menggeser gambar ke kiri */
+
     }
   
   }
 
 
+  .animation {
+    width: 640px; /* Sesuaikan dengan lebar gambar Anda */
+    height: 360px; /* Sesuaikan dengan tinggi gambar Anda */
+    background-image: url('../img/ngl1.png');
+    animation: play 3s steps(1) infinite; /* Mengatur animasi */
+  }
+  
+  @keyframes play {
+    0% { background-image: url('../img/ngl1.png'); }
+    85% { background-image: url('../img/ngl2.png'); }
+    90% { background-image: url('../img/ngl3.png'); }
+    95% { background-image: url('../img/ngl4.png'); }
+    100% { background-image: url('../img/ngl1.png'); }
+  }
 
-
-
+  @media only screen and (min-width: 1024px) {
+    .animation {
+      margin-left: 25%;
+    }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .animation {
+        margin-left: 12%; /* Menggeser gambar ke kiri */
+      }
+    }
+    
+    @media only screen and (max-width: 767px) {
+      .animation {
+        margin-left: 0%; /* Menggeser gambar ke kiri */
+  
+      }
+    
+    }
 
 /* ===== WORK =====*/
 
