@@ -319,6 +319,11 @@ img {
     display: block;
     margin: 0 auto;
 }
+.centered-image2 {
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+}
 
 .blog__title {
   margin-bottom: 5px;
