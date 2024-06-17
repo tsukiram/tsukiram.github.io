@@ -165,6 +165,11 @@ img {
 }
 
 /*Active menu*/
+/* Tambahkan atau perbarui gaya untuk kelas active-link */
+.active-link {
+  position: relative;
+}
+
 .active-link::after {
   position: absolute;
   content: "";
@@ -243,7 +248,7 @@ img {
     margin-left: 34%; /* Menggeser gambar ke kiri */
   }
   }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .ngl_button {
       display: flex;
       justify-content: flex-start; /* Mengatur konten ke kiri */
@@ -252,7 +257,7 @@ img {
     }
   }
   
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .ngl_button {
       display: flex;
       justify-content: flex-start; /* Mengatur konten ke kiri */
@@ -264,14 +269,14 @@ img {
   }
 
 
-  .animation {
+.animation {
     width: 640px; /* Sesuaikan dengan lebar gambar Anda */
     height: 360px; /* Sesuaikan dengan tinggi gambar Anda */
     background-image: url('../img/ngl1.png');
     animation: play 3s steps(1) infinite; /* Mengatur animasi */
   }
   
-  @keyframes play {
+@keyframes play {
     0% { background-image: url('../img/ngl1.png'); }
     85% { background-image: url('../img/ngl2.png'); }
     90% { background-image: url('../img/ngl3.png'); }
@@ -279,21 +284,29 @@ img {
     100% { background-image: url('../img/ngl1.png'); }
   }
 
-  @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .animation {
+      display: flex;
+      justify-content: flex-start; /* Mengatur konten ke kiri */
+      align-items: center;
       margin-left: 25%;
     }
     }
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
       .animation {
-        margin-left: 12%; /* Menggeser gambar ke kiri */
+        display: flex;
+        justify-content: flex-start; /* Mengatur konten ke kiri */
+        align-items: center;
+        margin-left: 12; /* Menggeser gambar ke kiri */
       }
     }
     
-    @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
       .animation {
-        margin-left: 0%; /* Menggeser gambar ke kiri */
-  
+        width: 200px;
+        display: flex;
+        justify-content: flex-start; /* Mengatur konten ke kiri */
+        align-items: center;
       }
     
     }

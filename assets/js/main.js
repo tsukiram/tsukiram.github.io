@@ -22,25 +22,39 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
+// Commenting out this block because we are going to use URL based active link highlighting
+// const sections = document.querySelectorAll('section[id]');
 
-const scrollActive = () =>{
-    const scrollDown = window.scrollY
+// const scrollActive = () =>{
+//     const scrollDown = window.scrollY;
 
-  sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+//     sections.forEach(current =>{
+//         const sectionHeight = current.offsetHeight,
+//               sectionTop = current.offsetTop - 58,
+//               sectionId = current.getAttribute('id'),
+//               sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']');
         
-        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
-            sectionsClass.classList.add('active-link')
-        }else{
-            sectionsClass.classList.remove('active-link')
-        }                                                    
-    })
-}
-window.addEventListener('scroll', scrollActive)
+//         if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+//             sectionsClass.classList.add('active-link');
+//         } else {
+//             sectionsClass.classList.remove('active-link');
+//         }                                                    
+//     });
+// };
+
+// window.addEventListener('scroll', scrollActive);
+
+/*===== URL BASED ACTIVE LINK HIGHLIGHTING =====*/
+window.addEventListener('DOMContentLoaded', () => {
+    const currentLocation = window.location.pathname;
+    navLink.forEach(link => {
+        if (link.getAttribute('href') === currentLocation) {
+            link.classList.add('active-link');
+        } else {
+            link.classList.remove('active-link');
+        }
+    });
+});
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
