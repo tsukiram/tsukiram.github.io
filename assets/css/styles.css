@@ -232,7 +232,7 @@ img {
 .footerngl .ngl .btn {
   width: 30%;
   position: absolute;
-  top: 30%;
+  top: 80px;
   left: 17%;
   transition: transform 0.5s; /* Menambahkan transisi */
 }
