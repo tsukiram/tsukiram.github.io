@@ -69,3 +69,41 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+/*===== FADE-OUT MUSIC FUNCTION =====*/
+document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('background-music');
+    const stopMusicTrigger = document.getElementById('stop-music');
+
+    // Fungsi untuk mengurangi volume secara bertahap
+    function fadeOutAudio() {
+        let fadeInterval = setInterval(() => {
+            if (audio.volume > 0.05) {
+                audio.volume -= 0.05;
+            } else {
+                audio.volume = 0;
+                audio.pause();
+                clearInterval(fadeInterval);
+            }
+        }, 200); // Mengurangi volume setiap 200 milidetik
+    }
+
+    // Fungsi untuk mendeteksi elemen masuk ke viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Event listener untuk scroll
+    window.addEventListener('scroll', () => {
+        if (isElementInViewport(stopMusicTrigger)) {
+            fadeOutAudio();
+        }
+    });
+});
