@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer & ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("nVTt9ZBEDTjvMFXQM");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>Tsukiram<span>.</span></h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="btn-primary contact-btn">
+                        <span class="btn-text">Contact</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span>Rama</span></h1>
+                    <h2 class="typed-text">Software Developer & ML Engineer</h2>
+                    <p>Passionate about building innovative solutions with cutting-edge technologies. Specializing in full-stack development and machine learning applications.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="#contact" class="btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/tsukiram" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ramaabb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://www.kaggle.com/tsukirama" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/hero-image.png" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <span class="line"></span>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/about-image.png" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h3>Software Developer & ML Engineer</h3>
+                    <p>I am a passionate software developer and machine learning engineer with expertise in creating efficient, scalable applications and data-driven solutions. With a strong foundation in computer science and a keen interest in artificial intelligence, I bring creative approaches to solving complex problems.</p>
+                    <p>My journey in tech has exposed me to various domains including web development, mobile applications, data analysis, and machine learning systems. I continuously strive to learn new technologies and methodologies to enhance my skills and deliver high-quality solutions.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-title">Name:</span>
+                            <span class="info-value">Abdurrahim Ramadhan I.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Email:</span>
+                            <span ><a class="info-value" href="mailto:ramaabbyll@gmail.com">ramaabbyll@gmail.com</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Degree:</span>
+                            <span class="info-value">Computer Science</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-title">Location:</span>
+                            <span class="info-value">Bogor, Indonesia</span>
+                        </div>
+                    </div>
+                    <a href="assets/CV Abdurrahim Ramadhan Idin.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <span class="line"></span>
+            </div>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>C/C++</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                                <span>95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4>React</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>SQL/NoSQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning / Data Science</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Data Analysis</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Deep Learning</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h4>NLP</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Services</h2>
+                <span class="line"></span>
+            </div>
+            <div class="services-content">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive, user-friendly websites and web applications with modern frameworks and technologies.</p>
+                </div>
+                <!-- <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Building native and cross-platform mobile applications for iOS and Android platforms.</p>
+                </div> -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Solutions</h3>
+                    <p>Developing ML models and algorithms to solve complex problems and extract insights from data.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <p>Analyzing data to identify patterns, trends, and insights that drive business decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <span class="line"></span>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <!-- <button class="filter-btn" data-filter="mobile">Mobile Apps</button> -->
+            </div>
+            <div class="projects-grid">
+                <!-- Web Development Project -->
+                <div class="project-item web">
+                    <div class="project-img">
+                        <img src="img/ram-ai.png" alt="Web Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Ram-AI: LLM-Powered Website Generator</h3>
+                        <p>An AI web app that turns text prompts 
+                            into complete websites. Using Gemini LLM, I developed a tool that automatically generates 
+                            HTML, CSS, and JavaScript files, making website creation incredibly fast and simple.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Gemini</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ramai.pythonanywhere.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning Project -->
+                <div class="project-item ml">
+                    <div class="project-img">
+                        <img src="img/plant.png" alt="ML Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Plant Detection CNN</h3>
+                        <p>A machine learning model that identifies four plant types (corn, 
+                            cotton, rice, wheat) with 90% accuracy. By using Python and TensorFlow, I designed a 
+                            smart agricultural recognition system that can distinguish between different crops.  </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Machine Learning Project -->
+                <div class="project-item ml">
+                    <div class="project-img">
+                        <img src="img/bee.png" alt="ML Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Bee Detection CNN</h3>
+                        <p>CNN model to classify different bee types with 
+                            81% accuracy. I developed this computer vision project to help understand and categorize 
+                            bee populations more effectively.  </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>CNN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Machine Learning Project -->
+                <div class="project-item ml">
+                    <div class="project-img">
+                        <img src="img/employee.png" alt="ML Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Employee Attrition Classification.</h3>
+                        <p> I built a neural network model to classify employee 
+                            attrition using 32 employee features. Achieved 86% testing accuracy.  </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>NN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://colab.research.google.com/drive/1Yyobdf_aGMdtNqRcbNGq3MUoBR-EmmRk?usp=sharing" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Project -->
+                <div class="project-item web">
+                    <div class="project-img">
+                        <img src="img/quran.png" alt="Web Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Random Aystul Quran</h3>
+                        <p>A website that can random quran verse</p>
+                        <div class="project-tech">
+                            <span>python</span>
+                            <span>flashk/span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://quranramaab.pythonanywhere.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/tsukiram/quran" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning Project -->
+                <div class="project-item ml">
+                    <div class="project-img">
+                        <img src="img/tweet.png" alt="ML Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tweet Sentiment Analysis: </h3>
+                        <p> I analyzed tweets from the 2024 Presidential Election Debate 
+                            using a Naive Bayes algorithm. The project allowed me to extract emotional insights with 
+                            72% model accuracy, showcasing my data analysis skills. </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-kaggle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <span class="line"></span>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Bogor, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:ramaabbyll@gmail.com">ramaabbyll@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+62 821 4772 6866</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Website</h3>
+                            <p>www.tsukiram.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Tsukiram. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-kaggle"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("b-8OhahW0TvaTpvvK"); // Ganti dengan Public Key Anda
+        })();
+    </script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
